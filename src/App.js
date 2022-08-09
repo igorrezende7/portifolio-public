@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Rotas from './routes';
+import React,{useState} from 'react';
+
+
+
+
+
 
 function App() {
+  
+  const animationClass = 'animate'
+  
+  function animeScroll(){
+    const target = document.querySelectorAll('[data-anime]')
+      const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+      target.forEach(function(el){
+          if((windowTop) > el.offsetTop){
+              el.classList.add(animationClass)
+          }else{
+              el.classList.remove(animationClass)
+          }
+          
+      })
+  }
+
+  
+animeScroll()
+
+  
+
+
+  window.addEventListener('scroll', function(){
+      animeScroll();
+      
+  })
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Rotas/>
   );
 }
 

@@ -1,0 +1,121 @@
+.header-list-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-ul{
+    color: white;
+    display: flex;
+  
+}
+.header-ul li{
+    list-style: none;
+    margin: 40px 65px;
+    font-size: 17px;
+    cursor:pointer;
+}
+.header-ul li:hover{
+    border-bottom: 1px solid white;
+}
+.burger-div{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.header-list-div-burger{
+    color: black;
+}
+#checkbox{
+    width: 100%;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #ccc ;
+    transition: .3s ease-in-out;
+    right: -10px;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkbox:checked + label span:nth-child(1){
+    transform: rotate(45deg);
+    top: 8px;
+}
+#checkbox:checked + label span:nth-child(2){
+    transform: rotate(-45deg);
+}
+#checkbox:checked + label span:nth-child(3){
+   opacity: 0;
+}
+
+
+
+.burger-content{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 45px;
+    transition: .3s;
+    display: none;
+}
+
+.ul-burger{
+    background-color: rgb(34, 34, 34);
+    height: auto;
+    position: relative;
+    color: white;
+    
+}
+.header-ul-burger{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+.header-ul-burger li{
+    margin-top: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+.header-ul-burger li:hover{
+    background-color: rgba(204, 204, 204, 0.445);
+}
+
+@media screen and (max-width: 760px) {
+    .header-list-div{
+        display: none;
+    }
+    .burger-div{
+        display: block;
+    }
+
+}

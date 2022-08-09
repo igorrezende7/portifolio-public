@@ -1,0 +1,33 @@
+.section-footer{
+    width: 100%;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.336);
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+.icons-footer-div{
+    margin-top: 60px;
+    text-align: center;
+    color: rgba(204, 204, 204, 0.548);
+}
+.contato-footer{
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.ul-contato{
+    list-style: none;
+    color: rgba(204, 204, 204, 0.548);
+}
+
+@media screen and (max-width: 760px){
+    .footer-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

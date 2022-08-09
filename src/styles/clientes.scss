@@ -1,0 +1,100 @@
+.title-clientes{
+    margin-top:50px;
+}
+.div-clientes{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+.p-clientes{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.carousel-section{
+    width: 100%;
+    position: relative;
+}
+
+.carousel-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel{
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel-card{
+  margin: 30px;
+  padding: 10px;
+  width: 280px;
+  text-align: center;
+  flex: none;
+}
+.carousel-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.carousel-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-img img{
+    height: 250px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.none{
+    display: none;
+}
+.buttons img{
+    height: 50px;
+    margin-bottom: 30px;
+}
+.buttons > button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.left{
+    transform: rotate(180deg);
+}
+
+.carousel-title{
+   color: white;
+   font-size: 20px;
+   font-weight: bold; 
+}
+
+.carousel-subtitle{
+    color: white;
+    margin-top: 5px;
+}
+.btn{
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 0px 10px 0px 10px;
+    height: 30px;
+    background-color: rgb(2, 2, 95);
+    border: none;
+    color: rgba(245, 245, 245, 0.719);
+    cursor: pointer;
+}
