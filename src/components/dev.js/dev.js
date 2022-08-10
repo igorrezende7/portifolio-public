@@ -16,7 +16,7 @@ const Dev=()=>{
                     <p className='presentation-title'>Conheça nosso desenvolvedor</p>
                 </div>
 
-                <div data-anime='right' className='presentation-card'>
+                <div id='dev' data-anime='right' className='presentation-card'>
                         <Card style={{ width: '18rem' }}>
                             <Card.Img className='img-card' variant="top" src={img} />
                             <Card.Body>

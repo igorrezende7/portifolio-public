@@ -31,7 +31,7 @@ const Clientes = () =>{
         </section>
         <section data-anime='right' className='carousel-section'>
             <div  className='carousel-container'>
-                <div  className='carousel' ref={carousel}>
+                <div id='clientes' className='carousel' ref={carousel}>
                     <div  className='carousel-card'>
                         <div className='carousel-img'>
                             <img src={espaco}/>

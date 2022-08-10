@@ -6,13 +6,16 @@
 html, body{
     height: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgba(0, 0, 0, 0.884);
     overflow-x: hidden;
 }
 .dev-section{
     position: relative;
-    padding-top: 30px;
+
 }
 .dev-div-img{
     position: absolute;
@@ -60,6 +63,7 @@ body{
 }
 .dev-text-p{
     padding: 30px;
+    margin-top: 20px;
 }
 .dev-div-content{
     animation: animation-top ease 0.5s;

@@ -19,6 +19,17 @@ function check(){
         burger_div.style.background='rgb(34, 34, 34)'
     }
 }
+
+function scrollDev(){
+    const dev = document.getElementById('dev')
+    dev.scrollIntoView()
+}
+
+function scrollClientes(){
+    const clientes = document.getElementById('clientes')
+    clientes.scrollIntoView()
+}
+
     return(
 
         <>
@@ -26,9 +37,9 @@ function check(){
                 <div className="header-list-div">
                     <ul className="header-ul">
                         <Link style={{textDecoration:'none', color:'white'}} to="/"><li style={{borderBottom:'1px solid white'}}>Home</li></Link>
-                        <li>Sobre</li>
+                        <li onClick={scrollDev}>Sobre</li>
                         <Link style={{textDecoration:'none', color:"white"}} to='/contato'><li>Contato</li></Link>
-                        <li>Clientes</li>
+                        <li onClick={scrollClientes}>Clientes</li>
                     </ul>
                     
                
@@ -47,9 +58,9 @@ function check(){
                     <div className="ul-burger">
                     <ul className="header-ul-burger">
                     <Link style={{textDecoration:'none', color:'white'}} to="/"><li>Home</li></Link>
-                        <li>Sobre</li>
+                        <li onClick={scrollDev}>Sobre</li>
                         <Link style={{textDecoration:'none', color:"white"}} to='/contato'><li>Contato</li></Link>
-                        <li>Serviços</li>
+                        <li onClick={scrollClientes}>Clientes</li>
                     </ul>
                     </div>
                  </div>

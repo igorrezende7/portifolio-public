@@ -3,6 +3,7 @@ import '../../styles/contato.scss'
 import Header from '../header/header'
 import ClienteService from '../services/clientes';
 import joia from '../../assets/joia.jpg'
+import InputMask from 'react-input-mask';
 const Contato =() =>{
 
 const [name, setname] = useState()
@@ -27,7 +28,8 @@ function showBack(){
         setison(false)
         showBack()
         try {
-            const send = await ClienteService.Send({name:name, email:email, telephone:telephone, comments:comments})
+            const send = await ClienteService.Send({name:name, email:email, telephone:telephone})
+            const sendEmail = await ClienteService.SendEmail({name:name, email:email,  comments:comments})
         } catch (error) {
             console.log(error)
         }
@@ -61,10 +63,8 @@ function showBack(){
                     onChange={e => setemail(e.target.value)}
                     ></input>
                     <label htmlFor='telefone'>Telefone*</label>
-                    <input required placeholder='(11)9999-9999' type='text' id='telefone'
-                    value={telephone}
-                    onChange={e => settelephone(e.target.value)}
-                    ></input>
+                    <InputMask placeholder='(99) 99999-9999' mask="(99) 99999-9999" onChange={e=>settelephone(e.target.value)} value={telephone}>
+                    </InputMask>
                     <label htmlFor='area'>Comentários</label>
                     <textarea required value={comments}
                         onChange={e=>setcomments(e.target.value)}
