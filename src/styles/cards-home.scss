@@ -75,18 +75,18 @@
 }
 
 [data-anime='left']{
-    transform: translateX(-100px);
+    transform: translate3d(-20px,0px,0px);
 
 }
 [data-anime='right']{
-    transform: translateX(50px);
+    transform: translate3d(-10px,0px,0px);
 }
 [data-anime='top']{
-    transform: translate3d(0px, -50px,-50px);
+    transform: translate3d(0px,0px,-50px);
 }
 [data-anime].animate{
     opacity: 1;
-    transform: translateX(0px);
+    transform: translate3d(0px,0px,0px);
 }
 
 @media screen and (max-width: 990px){
