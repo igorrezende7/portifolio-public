@@ -55,18 +55,18 @@ body{
 }
 .title{
     font-size: 40px;
-    animation: animation-left ease 0.5s;
+    animation: animation-left ease 1s;
 }
 .subtitle{
     font-size: 20px;
-    animation: animation-right ease 0.5s;
+    animation: animation-right ease 1s;
 }
 .dev-text-p{
     padding: 30px;
     margin-top: 20px;
 }
 .dev-div-content{
-    animation: animation-top ease 0.5s;
+    animation: animation-top ease 1s;
 }
 .div-icons{
     position: relative;
@@ -77,7 +77,7 @@ body{
 .ul-icons{
     list-style: none;
     display: flex;
-    animation: animation-left ease 0.5s;
+    animation: animation-left ease 1s;
 }
 .ul-icons li{
     color: white;
@@ -89,16 +89,16 @@ body{
 }
 
 @keyframes animation-top{
-    0%{transform: translateY(-100px);}
-    100%{transform: translateY(0px);}
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 @keyframes animation-right{
-    0%{transform: translateX(100px);}
-    100%{transform: translateX(0px);}
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 @keyframes animation-left{
-    0%{transform: translateX(-50px);}
-    100%{transform: translateX(0px);}
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 [data-animation]{
     opacity: 0;
